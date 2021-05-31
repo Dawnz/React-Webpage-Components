@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dawnz Practise</title>
+
+  <style type="text/css">
+    .highlight { background-color: yellow; }
+  </style>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+  <link href="css/jquery-ui.min.css" rel="stylesheet">
+
+  <!-- Add the JQuery UI JS file -->
+  <script src ="js/jquery-ui.min.js" > </script>
+</head>
+<body>
+  <div id="wrapper">
+    <div id="intro">
+      <p id="par_1">this is my first paragraph that speaks about <i>me</i> and what <i>I</i> have accomplished. I have very little knowledge abuot a particular aspect of life and try very hard to improve. I consider myself smart and funny and very prepared to accomplish this task </p>
+
+      <p id="par_2">This includes <b>JQuery</b>. Throught this tutorial i will try a variety of steps to accomplish my goal of mastery. </p>
+
+      <table id="tableData">
+        <caption>Rugby</caption>
+        <thead>
+          <tr>
+           <td colspan="4"> Best Rugby Team </td>
+         </tr>
+       </thead>
+       <tfoot>
+        <tr><td colspan="4"> Teams 2016</td></tr>
+      </tfoot>
+      <tbody>
+        <tr>
+          <td></td>
+          <td>Wins</td>
+          <td>Loss</td>
+          <td>Points</td>
+        </tr>
+        <tr>
+          <td><a href="#">Duhaney Park Sharks</a></td>
+          <td id=val_1>8</td>
+          <td id=val_2>0</td>
+          <td>24</td>
+        </tr>
+        <tr>
+          <td><a href="#">Ligunea Dragons</a></td>
+          <td id=val_1>6</td>
+          <td id=val_2>2</td>
+          <td>18</td>
+        </tr>
+        <tr>
+          <td><a href="#">GC Foster College</a></td>
+          <td id=val_1>5</td>
+          <td id=val_2>3</td>
+          <td>15</td>
+        </tr>
+      </tbody>
+    </table>
+
+
+
+  </div> 
+
+  <div id="shTabs">
+    <ul>
+      <li><a href="#chapter_1">Introduction</a></li>
+      <li><a href="#chapter_2">Inspiration</a></li>
+      <li><a href="#chapter_3">Innovation</a></li>
+    </ul>
+    <div id="chapter_1">
+      Wel this is the beginning of something good. I intend to be the very best.....like no 1...ever was
+    </div>
+    <div id="chapter_2">
+      going through high school was ruff... fail nuff class and igle an bear tings....best days a mi life. met the loves of my life, rugby and coding
+    </div>
+    <div id="chapter_3">
+      now here i am with very little to show..giving thanks
+    </div>
+  </div><br />
+  <script type="text/javascript">
+  $(document).ready(function() {
+
+     $("#tableData a").css("color", "green");
+
+      $("#shTabs").tabs({
+    // The event that switches the panel
+    event: "click",
+    // Effects: fadeIn, fadeOut, slideDown, slideUp, animate
+    show: "fadeIn",
+    hide: "fadeOut",
+    // Starting panel
+    active: 3,
+    // Collapse by clicking the current tab
+    collapsible: true,
+    // Height based on content (content) or largest (auto)
+    heightStyle: "auto"
+  });
+    });
+  
+</script>
+</div>
+
+
+
+</body>
+</html>
