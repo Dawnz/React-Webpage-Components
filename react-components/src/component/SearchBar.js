@@ -5,6 +5,7 @@ export default function SearchBar({
   filterName,
   placeholder,
   setSearchResults,
+  selected,
 }) {
   const [searchTerm, setSearchTerm] = useState('');
   //   console.log(content);
@@ -12,12 +13,14 @@ export default function SearchBar({
     setSearchTerm(event.target.value);
   };
   useEffect(() => {
+    // const option = selected;
     const results = content.filter((cont) =>
-      cont.first_name.toLowerCase().includes(searchTerm)
+      cont[selected].toLowerCase().includes(searchTerm)
     );
+    console.log(selected);
     setSearchResults(results);
   }, [searchTerm]);
-  console.log(content, filterName);
+  //   console.log(content, filterName);
   return (
     <div>
       <p> Hello World Searchbar</p>
